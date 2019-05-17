@@ -12,33 +12,7 @@ import {StyleSheet, Text, View} from 'react-native';
 class App extends Component {
   constructor() {
     super();
-    this.state = {
-      customStyles: {
-        color: 'green'
-      }
-    }
-
-    setInterval(() => {
-      if (this.state.customStyles.color === 'green') {
-        this.setState({
-          customStyles: {
-            color: 'red'
-          }
-        })
-      } else if (this.state.customStyles.color === 'red') {
-        this.setState({
-          customStyles: {
-            color: 'blue'
-          }
-        })
-      } else {
-        this.setState({
-          customStyles: {
-            color: 'green'
-          }
-        })
-      }
-    }, 500)
+    this.state = {}
   }
 
   render() {
