@@ -22,10 +22,10 @@ class App extends Component {
           <Text style={styles.text}>This is 1</Text>
         </View>
         <View style={styles.half2}>
-          <View style={[styles.half21, half2x]}>
+          <View style={[styles.half21, styles.half2x]}>
             <Text style={styles.text}>This is 2/1</Text>
           </View>
-          <View style={[styles.half22, half2x]}>
+          <View style={[styles.half22, styles.half2x]}>
             <Text style={styles.text}>This is 2/2</Text>
           </View>
         </View>
