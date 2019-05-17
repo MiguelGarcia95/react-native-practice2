@@ -16,17 +16,6 @@ class App extends Component {
       username: '',
       password: ''
     }
-    this.handleUsernameChange = this.handleUsernameChange.bind(this);
-    this.handlePasswordChange = this.handlePasswordChange.bind(this);
-  }
-
-  handleUsernameChange(newText) {
-    this.setState({username: newText})
-    console.log(`Username is ${newText}`)
-  }
-
-  handlePasswordChange(newText) {
-    this.setState({password: newText})
   }
 
   render() {
@@ -34,12 +23,10 @@ class App extends Component {
       <View style={styles.container}>
         <Text>Username</Text>
         <TextInput
-          onChangeText={this.handleUsernameChange}
         />
 
         <Text>Password</Text>
         <TextInput
-          onChangeText={this.handlePasswordChange}
         />
       </View>
     );
