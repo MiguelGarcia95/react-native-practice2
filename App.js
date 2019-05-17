@@ -22,10 +22,10 @@ class App extends Component {
           <Text style={styles.text}>This is 1</Text>
         </View>
         <View style={styles.half2}>
-          <View style={styles.half21}>
+          <View style={[styles.half21, half2x]}>
             <Text style={styles.text}>This is 2/1</Text>
           </View>
-          <View style={styles.half22}>
+          <View style={[styles.half22, half2x]}>
             <Text style={styles.text}>This is 2/2</Text>
           </View>
         </View>
@@ -49,17 +49,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: 'blue'
   },
-  half21: {
+  half2x: {
     flex: 1,
-    backgroundColor: 'green',
     justifyContent: 'center',
     alignItems: 'center'
   },
+  half21: {
+    backgroundColor: 'green',
+  },
   half22: {
-    flex: 1,
     backgroundColor: 'black',
-    justifyContent: 'center',
-    alignItems: 'center'
   },
   text: {
     color: 'white',
