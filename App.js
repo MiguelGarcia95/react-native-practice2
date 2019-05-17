@@ -22,7 +22,8 @@ class App extends Component {
 
         </View>
         <View style={styles.half2}>
-
+          <View style={styles.half21}></View>
+          <View style={styles.half22}></View>
         </View>
       </View>
     );
@@ -41,6 +42,14 @@ const styles = StyleSheet.create({
   half2: {
     flex: 1,
     backgroundColor: 'blue'
+  },
+  half21: {
+    flex: 1,
+    backgroundColor: 'green'
+  },
+  half22: {
+    flex: 1,
+    backgroundColor: 'yellow'
   }
 });
 
