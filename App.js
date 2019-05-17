@@ -18,7 +18,12 @@ class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={[styles.welcome, this.state.customStyles]}>Welcome to React Native!!</Text>
+        <View style={styles.half1}>
+
+        </View>
+        <View style={styles.half2}>
+
+        </View>
       </View>
     );
   }
@@ -27,21 +32,15 @@ class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-    color: '#232323',
+  half1: {
+    flex: 1,
+    backgroundColor: 'red'
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  half2: {
+    flex: 1,
+    backgroundColor: 'blue'
+  }
 });
 
 export default App;
