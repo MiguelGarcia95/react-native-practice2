@@ -12,7 +12,7 @@ import {StyleSheet, Text, TextInput, View} from 'react-native';
 class App extends Component {
   constructor() {
     super();
-    this.state = {}
+    this.state = {textInput: ''}
     this.handleChangeText = this.handleChangeText.bind(this);
   }
 
@@ -25,7 +25,9 @@ class App extends Component {
       <View style={styles.container}>
         <TextInput
           onChangeText={this.handleChangeText}
+          name='textInput'
         />
+        <Text>{this.state.textInput}</Text>
       </View>
     );
   }
