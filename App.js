@@ -12,24 +12,34 @@ import {StyleSheet, Text, TextInput, View} from 'react-native';
 class App extends Component {
   constructor() {
     super();
-    this.state = {value: ''}
-    this.handleChangeText = this.handleChangeText.bind(this);
+    this.state = {
+      username: '',
+      password: ''
+    }
+    this.handleUsernameChange = this.handleUsernameChange.bind(this);
+    this.handlePasswordChange = this.handlePasswordChange.bind(this);
   }
 
-  handleChangeText(newText) {
-    this.setState({
-      value: newText
-    })
+  handleUsernameChange(newText) {
+    this.setState({username: newText})
+  }
+
+  handlePasswordChange(newText) {
+    this.setState({password: newText})
   }
 
   render() {
     return (
       <View style={styles.container}>
+        <Text>Username</Text>
         <TextInput
-          defaultValue={this.state.value}
-          onChangeText={this.handleChangeText}
+          onChangeText={this.handleUsernameChange}
         />
-        <Text>You are writing: {this.state.value}</Text>
+
+        <Text>Password</Text>
+        <TextInput
+          onChangeText={this.handlePasswordChange}
+        />
       </View>
     );
   }
@@ -38,7 +48,8 @@ class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ddd'
+    backgroundColor: '#ddd',
+    padding: 20
   }
 });
 
