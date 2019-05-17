@@ -40,7 +40,9 @@ const styles = StyleSheet.create({
   },
   half1: {
     flex: 1,
-    backgroundColor: 'red'
+    backgroundColor: 'red',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   half2: {
     flex: 1,
@@ -48,12 +50,16 @@ const styles = StyleSheet.create({
     backgroundColor: 'blue'
   },
   half21: {
-    flex: 2,
-    backgroundColor: 'green'
+    flex: 1,
+    backgroundColor: 'green',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   half22: {
     flex: 1,
-    backgroundColor: 'yellow'
+    backgroundColor: 'black',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   text: {
     color: 'white',
