@@ -14,17 +14,31 @@ class App extends Component {
     super();
     this.state = {
       customStyles: {
-        opacity: 0
+        color: 'green'
       }
     }
 
     setInterval(() => {
-      this.setState({
-        customStyles: {
-          opacity: 1
-        }
-      })
-    }, 1000)
+      if (this.state.customStyles.color === 'green') {
+        this.setState({
+          customStyles: {
+            color: 'red'
+          }
+        })
+      } else if (this.state.customStyles.color === 'red') {
+        this.setState({
+          customStyles: {
+            color: 'blue'
+          }
+        })
+      } else {
+        this.setState({
+          customStyles: {
+            color: 'green'
+          }
+        })
+      }
+    }, 500)
   }
 
   render() {
