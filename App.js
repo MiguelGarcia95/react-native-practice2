@@ -32,8 +32,7 @@ class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    flexDirection: 'row'
+    flex: 1
   },
   half1: {
     flex: 1,
@@ -41,6 +40,7 @@ const styles = StyleSheet.create({
   },
   half2: {
     flex: 1,
+    flexDirection: 'row',
     backgroundColor: 'blue'
   },
   half21: {
