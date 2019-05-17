@@ -23,8 +23,8 @@ class App extends Component {
     }
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Image source={imageInfo} />
+        <Text style={styles.welcome}>Welcome to React Native!!</Text>
+        <Image style={{width: 50, height: 150}} source={imageInfo} />
       </View>
     );
   }
