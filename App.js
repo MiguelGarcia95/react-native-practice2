@@ -11,6 +11,7 @@ import {StyleSheet, Text, View} from 'react-native';
 
 class App extends Component {
   constructor() {
+    super();
     this.state = {
       customStyles: {
         opacity: 0
