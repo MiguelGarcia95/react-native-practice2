@@ -22,6 +22,7 @@ class App extends Component {
 
   handleUsernameChange(newText) {
     this.setState({username: newText})
+    console.log(`Username is ${newText}`)
   }
 
   handlePasswordChange(newText) {
@@ -49,7 +50,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#ddd',
-    padding: 20
+    justifyContent: 'center',
+    padding: '10%'
   }
 });
 
