@@ -34,8 +34,8 @@ class App extends Component {
 
         <Text>Password</Text>
         <TextInput
-          defaultValue={this.state.username}
-          onChangeText={text => this.setState({username: text})}
+          defaultValue={this.state.password}
+          onChangeText={text => this.setState({password: text})}
         />
 
         <Button title={"Hey!"} onPress={this.buttonPressed} />
