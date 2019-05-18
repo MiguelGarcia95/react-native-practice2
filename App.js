@@ -7,15 +7,20 @@
  */
 
 import React, {Component} from 'react';
-import {StyleSheet, Text, TextInput, View} from 'react-native';
+import {StyleSheet, Text, TextInput, View, Button} from 'react-native';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      username: '',
-      password: ''
     }
+    this.buttonPressed = this.buttonPressed.bind(this);
+  }
+
+  buttonPressed() {
+    const username = this._username._lastNativeText;
+    const password = this._password._lastNativeText;
+    console.log(username, password);
   }
 
   render() {
@@ -23,11 +28,15 @@ class App extends Component {
       <View style={styles.container}>
         <Text>Username</Text>
         <TextInput
+          ref={input => this._username = input}
         />
 
         <Text>Password</Text>
         <TextInput
+          ref={input => this._password = input}
         />
+
+        <Button title={"Hey!"} onPress={this.buttonPressed} />
       </View>
     );
   }
